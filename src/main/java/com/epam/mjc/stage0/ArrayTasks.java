@@ -12,6 +12,7 @@ public class ArrayTasks {
      */
     public String[] seasonsArray() {
 
+        return new String[0];
     }
 
     /**
@@ -26,6 +27,7 @@ public class ArrayTasks {
      */
     public int[] generateNumbers(int length) {
 
+        return new int[0];
     }
 
     /**
@@ -38,6 +40,7 @@ public class ArrayTasks {
      */
     public int totalSum(int[] arr) {
 
+        return 0;
     }
 
     /**
@@ -51,6 +54,7 @@ public class ArrayTasks {
      */
     public int findIndexOfNumber(int[] arr, int number) {
 
+        return number;
     }
 
     /**
@@ -64,6 +68,7 @@ public class ArrayTasks {
      */
     public String[] reverseArray(String[] arr) {
 
+        return arr;
     }
 
     /**
@@ -79,6 +84,7 @@ public class ArrayTasks {
      */
     public int[] getOnlyPositiveNumbers(int[] arr) {
 
+        return arr;
     }
 
     /**
@@ -93,5 +99,6 @@ public class ArrayTasks {
      */
     public int[][] sortRaggedArray(int[][] arr) {
 
+        return arr;
     }
 }
