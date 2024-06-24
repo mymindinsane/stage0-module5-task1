@@ -21,7 +21,7 @@ public class AlgorithmComplexity {
      */
     public Complexity badLinerSearch() {
 
-        return null;
+        return Complexity.O_N;
     }
 
     /**
@@ -29,7 +29,7 @@ public class AlgorithmComplexity {
      */
     public Complexity arrayIndexItemAccess() {
 
-        return null;
+        return Complexity.O_1;
     }
 
     /**
@@ -37,7 +37,7 @@ public class AlgorithmComplexity {
      */
     public Complexity binarySorting() {
 
-        return null;
+        return Complexity.O_LOG_N;
     }
 
     /**
@@ -45,6 +45,6 @@ public class AlgorithmComplexity {
      */
     public Complexity twoCycleSorting() {
 
-        return null;
+        return Complexity.O_N_2;
     }
 }
