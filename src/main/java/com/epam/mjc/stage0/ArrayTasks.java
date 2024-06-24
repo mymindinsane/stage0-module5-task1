@@ -1,5 +1,6 @@
 package com.epam.mjc.stage0;
 
+
 /**
  * Here are the tasks for working with the arrays.
  * <p>
@@ -12,7 +13,7 @@ public class ArrayTasks {
      */
     public String[] seasonsArray() {
 
-        return new String[0];
+        return new String[] {"winter", "spring", "summer", "autumn"};
     }
 
     /**
@@ -26,8 +27,11 @@ public class ArrayTasks {
      * length = 5  -> [1, 2, 3, 4, 5]
      */
     public int[] generateNumbers(int length) {
-
-        return new int[0];
+        int[] arr = new int[length];
+        for (int i = 0; i < length;i++){
+            arr[i] = i+1;
+        }
+        return arr;
     }
 
     /**
@@ -39,8 +43,11 @@ public class ArrayTasks {
      * arr = [5, -3, -4] -> sum = -2
      */
     public int totalSum(int[] arr) {
-
-        return 0;
+        int sum = 0;
+        for (int i = 0;i < arr.length;i++){
+            sum += arr[i];
+        }
+        return sum;
     }
 
     /**
@@ -53,8 +60,14 @@ public class ArrayTasks {
      * arr = [5, -3, -4],   number = 10    ->  -1
      */
     public int findIndexOfNumber(int[] arr, int number) {
-
-        return number;
+        int index = -1;
+        for (int i = 0;i < arr.length;i++){
+            if (arr[i] == number){
+                index = i;
+                break;
+            }
+        }
+        return index;
     }
 
     /**
@@ -67,8 +80,11 @@ public class ArrayTasks {
      * arr = ["pineapple", "apple", "pen"] -> ["pen", "apple", "pineapple"]
      */
     public String[] reverseArray(String[] arr) {
-
-        return arr;
+        String[] arr2 = new String[arr.length];
+        for (int i = 0;i < arr.length;i++){
+            arr2[i] = arr[arr.length - 1 - i];
+        }
+        return arr2;
     }
 
     /**
@@ -83,8 +99,21 @@ public class ArrayTasks {
      * arr = [1, 2]         -> [1, 2]
      */
     public int[] getOnlyPositiveNumbers(int[] arr) {
-
-        return arr;
+        int lengthCounter = 0;
+        for (int i = 0;i < arr.length;i++){
+            if (arr[i] > 0){
+                lengthCounter++;
+            }
+        }
+        int counter = 0;
+        int[] positiveArr = new int[lengthCounter];
+        for (int j = 0;j < arr.length;j++){
+            if (arr[j] > 0){
+               positiveArr[counter] = arr[j];
+               counter++;
+            }
+        }
+        return positiveArr;
     }
 
     /**
